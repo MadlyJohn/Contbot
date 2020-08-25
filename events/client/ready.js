@@ -1,5 +1,5 @@
+
 module.exports = (bot) => {
-    "Im awake"
+    console.log("hELLO THERE")
+    bot.user.setActivity(`.help | discord.gg/knrqhnD`);
 }
-
-
