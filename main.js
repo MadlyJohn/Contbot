@@ -52,7 +52,7 @@ bot.on("guildMemberAdd", (member) => {
   
     let wembed = new Discord.MessageEmbed()
     .setAuthor(member.user.username, member.user.avatarURL())
-    .setColor("#ff2050")
+    .setColor('RANDOM')
     .setThumbnail(member.user.avatarURL())
     .setDescription(`${msg}`)
     .setTimestamp()
