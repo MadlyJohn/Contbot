@@ -35,10 +35,7 @@ bot.giveawaysManager = new GiveawaysManager(bot, {
     }
 });
 
-bot.on('ready', () => {
-    console.log('I am ready');
-    bot.user.setActivity(`.help | discord.gg/Dankers`)
-});
+
 
 bot.on("guildMemberAdd", (member) => {
 
