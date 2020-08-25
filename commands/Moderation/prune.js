@@ -4,7 +4,7 @@ module.exports = {
     description: "Delete messgaes",
     usage: "prune <number>",
     run: async (bot, message, args) => {
-        if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('You don\'t have the permission to use this command.');
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send('You don\'t have the permission to use this command.');
 
         if (isNaN(args[0])) return message.channel.send("Please input a valid number.") // isNaN = is Not a Number. (case sensitive, write it right)
 
