@@ -1,5 +1,5 @@
 module.exports = async (bot, message) => {
-    const prefix = "#";
+    const prefix = ".";
 
     // If the message was sent by a bot, doesn't start with the prefix, or wasn't in a guild, return
     if (
