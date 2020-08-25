@@ -76,7 +76,7 @@ module.exports = {
         user.roles.add(role)
             .then(member => message.channel.send(embed))
 
-            const logs = new MessageEmbed()
+            const logs = new Discord.MessageEmbed()
             .setAuthor(message.author.username , message.author.avatarURL()) 
               .setDescription(`**ROLE ADDED**\n**Role added** ${role}\n**Moderator** ${message.author} `)
               .setColor('RANDOM')
