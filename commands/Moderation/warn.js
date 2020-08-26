@@ -40,7 +40,7 @@ if (user.roles.highest.rawPosition >= message.member.roles.highest.rawPosition) 
     return message.channel.send(noperms)
 }
     
-let reason = args.slice(2).join(" ")
+let reason = args.slice(1).join(" ")
 if(!reason) reason = "No reason given!"
 
         
