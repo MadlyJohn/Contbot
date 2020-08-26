@@ -8,7 +8,7 @@ module.exports = {
     name: "settings",
     description: "view settings",
     run: async (bot, message, args) => {
-    if (!(message.member.hasPermission("MANAGE_GUILD"))) return message.channel.send(`:no_entry:  U Dont Have Permissions!`);
+    if (!(message.member.hasPermission("MANAGE_GUILD"))) return message.channel.send(`:no_entry:  U Dont Have Permission!`);
 
     const yes = bot.emojis.cache.get("569290398908940318")
     const nope = bot.emojis.cache.get("569290399194284064")
