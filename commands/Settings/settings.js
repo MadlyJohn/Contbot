@@ -15,18 +15,18 @@ module.exports = {
 
     const logID = await db.fetch(`lChannel_${message.guild.id}`)
     const lChannel = message.guild.channels.cache.get(logID)
-    const lcStr = lChannel ? `✅ - ${lChannel.toString()}` : `❌ - Not setup if you would like to set up a log channel use this command: \`#setlogchannel <channel>\` `
+    const lcStr = lChannel ? `✅ - ${lChannel.toString()}` : `❌ - Not setup if you would like to set up a log channel use this command: \`.setlogchannel <channel>\` `
 
     const welcomeID = await db.fetch(`welchannel_${message.guild.id}`)
     const welchannel = message.guild.channels.cache.get(welcomeID)
-    const wcStr = welchannel ? `✅ - ${welchannel.toString()}` : `❌ - Not setup if you would like to set up a welcome channel use this command: \`#setwelcomechannel <channel>\` `
+    const wcStr = welchannel ? `✅ - ${welchannel.toString()}` : `❌ - Not setup if you would like to set up a welcome channel use this command: \`.setwelcomechannel <channel>\` `
 
     const mutedID = await db.fetch(`mRole_${message.guild.id}`)
     const muteRole = message.guild.roles.cache.get(mutedID)
-    const mrStr = muteRole ? `✅ - ${muteRole.toString()}` : `❌ - Not setup if you would like to set up a mute role use this command: \`#setmutedrole <role name / @mention>\``
+    const mrStr = muteRole ? `✅ - ${muteRole.toString()}` : `❌ - Not setup if you would like to set up a mute role use this command: \`.setmutedrole <role name / @mention>\``
 
     let msg = db.get(`welmessage_${message.guild.id}`)
-    const welmsg = msg ? `✅ - ${msg.toString()}` : `❌ - Not setup if you would like to set up a welcome messgae use this command: \`#setwelcomemessage [message]\``
+    const welmsg = msg ? `✅ - ${msg.toString()}` : `❌ - Not setup if you would like to set up a welcome messgae use this command: \`.setwelcomemessage [message]\``
 
     const embed = new Discord.MessageEmbed()
          .setTitle('**Settings**')
