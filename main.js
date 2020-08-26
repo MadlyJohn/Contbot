@@ -2,8 +2,7 @@ const { Client, Collection } = require("discord.js");
 const Discord = require("discord.js")
 const db = require('quick.db')
 const bot = new Discord.Client({
-    disableEveryone: true // what does this disable thing do?
-  });;
+    disableEveryone: true});;
 const hostedBy = (true)
 const config = require('./config.json');
 bot.config = config;
