@@ -4,7 +4,6 @@ const db = require('quick.db')
 const bot = new Discord.Client({
     disableEveryone: true // what does this disable thing do?
   });;
-const { token } = require("./config.json");
 const hostedBy = (true)
 const config = require('./config.json');
 bot.config = config;
